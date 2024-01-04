@@ -49,7 +49,7 @@ class Cookie:
         self.vector = vec
 
     #get how many scoops of given ingredient the cookie has
-    def get_ingr_amount(self, ingr_name):
+    def get_ingr_scoops(self, ingr_name):
         #ingredient number in global list of available ingredients
         ingredient_list = [i for i in INGREDS.keys()] 
         ord = ingredient_list.index(ingr_name)
@@ -98,10 +98,10 @@ def find_max():
         c = Cookie(vec)
 
         #scoops of ingredient in current cookie
-        mr = c.get_ingr('Sugar')
-        ms = c.get_ingr('Sprinkles')
-        my = c.get_ingr('Candy')
-        me = c.get_ingr('Chocolate')
+        mr = c.get_ingr_scoops('Sugar')
+        ms = c.get_ingr_scoops('Sprinkles')
+        my = c.get_ingr_scoops('Candy')
+        me = c.get_ingr_scoops('Chocolate')
 
         #get properties of each ingredient
         (cr, cs, cy, ce) = [x.capacity for x in INGREDS.values()]
