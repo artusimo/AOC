@@ -92,7 +92,6 @@ class Elf:
         Elf.elves_by_house.setdefault(self.next_address, []).append(self)
 
 
-
 #gifts distribution to houses picked by elf's generator
 def solve():
     houses = {} #slovnik s domy #houses
