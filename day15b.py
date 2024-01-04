@@ -88,8 +88,6 @@ def get_vec():
 
 def find_max():
 
-    global ob_max
-
     #get scoops vector generator
     gen = get_vec()
 
@@ -128,16 +126,17 @@ def find_max():
         #objective function (as per instructions)
         ob = C*D*T*F
 
+        global OB_MAX
         #find objective function maximum
-        if ob_max < ob:
+        if OB_MAX < ob:
             if K == 500: #additinal constraint - a cooking must be just of 500 cal
-                ob_max = ob
+                OB_MAX = ob
 
 
 #init objective function value at start
-ob_max = 0
+OB_MAX = 0
 
 load_input()
 find_max()
-print(ob_max)
+print(OB_MAX)
 
