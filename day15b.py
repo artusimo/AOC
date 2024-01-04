@@ -86,9 +86,6 @@ def get_vec():
                         yield vec
 
 
-
-
-
 def find_max():
 
     global ob_max
