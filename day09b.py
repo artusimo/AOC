@@ -101,7 +101,7 @@ read_input()
 create_network()  
 solve()
 
-print("Answear: ", MIN_DISTANCE)
+print("Answer: ", MIN_DISTANCE)
 
 
     
