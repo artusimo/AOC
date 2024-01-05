@@ -132,6 +132,8 @@ class Network():
             return Network(for_wire).net_output
 
 #ask for any wire's input ('a' by instruction)
+#creates only the subset of network that is needed (not entire network) for given wire,
+#so unnecessary calculations (e.g. behind 'a') are ommited
 ntw = Network('a')
 
 print("Answer: ", ntw.net_output)
