@@ -53,7 +53,7 @@ class City(dict):
         
 #parse input and convert to objects and save to global CONNECTIONS list
 def read_input():
-    f = open('myapp\input_data.txt', 'r')
+    f = open('myapp\day09\input_data.txt', 'r')
     rows = f.read().splitlines()
 
     global CONNECTIONS

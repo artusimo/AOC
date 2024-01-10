@@ -57,7 +57,7 @@ class Cookie:
 
 #parse flat file input with rows as Ingredient object attributes
 def load_input():
-    f = open('myapp\input_data.txt', 'r')
+    f = open('myapp\day15\input_data.txt', 'r')
     rows = f.read().splitlines()
 
     #register of avalailable ingredients and their properties

@@ -105,7 +105,7 @@ class Network():
     
     def __init__(self, for_wire:str):
         #read input from .txt
-        f = open('myapp\input_data.txt', 'r')
+        f = open('myapp\day07\input_data.txt', 'r')
         rows = f.read().splitlines()
         #searches for all rows = wires to find 
         for row in rows:
